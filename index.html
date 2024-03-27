@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <title>Stock Trading Game</title>
+</head>
+
+
+
+<body>
+    <span id="tooltip"></span>
+    <div id="level">Level: 1</div>
+    <div id="timer">Time Left: 300s</div>
+    <button id="pauseButton">Pause</button>
+    
+    
+    <!-- Displaying the portfolio -->
+    <div id="balance">Balance: $1000</div>
+    <div id="total-earned">Total Earned: $0</div>
+    <div id="portfolio">Portfolio: </div>
+    <table id="stocks">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Buy</th>
+                <th>Sell</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <table id="sales">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Date & Time</th>
+                <th>Purchase Price</th>
+                <th>Sell Price</th>
+                <th>Profit</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <canvas id="chart"></canvas>
+    
+    
+
+    <script src="/functions/portfolio/updatePortfolio.js"></script>
+    <script src="/functions/balance/updateBalance.js"></script>
+    <script src="/functions/stock/sellStock.js"></script>
+    <script src="/functions/stock/buyStock.js"></script>
+    <script src="/functions/stock/updateStock.js"></script>
+    <script src="/functions/utility/addToolTipToStocks.js"></script>
+    <script src="/functions/utility/addToolTipToPortfolio.js"></script>
+    <script src="/functions/utility/countDownTimer.js"></script>
+    <script src="/functions/utility/pauseGame.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
