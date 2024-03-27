@@ -47,7 +47,7 @@ stocksTable.addEventListener('click', (event) => {
 
 
 // Update stocks every second
-setInterval(updateStocks, 3000);
+setInterval(updateStocks, 4000);
 
 
 
